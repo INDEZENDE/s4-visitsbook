@@ -11,7 +11,7 @@
   var $background=$('#background');
   var $left=$('#left');
   var $center=$('#center');
-  var $rigth=$('#rigth');
+  var $right=$('#right');
   var $button=$('#button');//Botón de enviarr
   var arrayText= [];//Arreglo donde se guardarán los datos
   var $pastCommit=$('#pastCommit');//Área doonde se publican los commits pasados
@@ -32,35 +32,62 @@
 
 	// Cuando den click en algún evento lo cambia
 	    $large.on("click", function (){
+				$enter.text("");
 	       $valor=$area.val();
-	       $enter.attr("class","large");
+	       $enter.attr("class","large");//$enter.addClass("large")
 	       $enter.append($valor);
 	    });
 
 	    $medium.on("click", function (){
+				$enter.text("");
 	       $valor=$area.val();
 	       $enter.attr("class","medium");
 	       $enter.append($valor);
 	    });
 
 	   $small.on("click", function (){
+			 $enter.text("");
 	      $valor=$area.val();
 	      $enter.attr("class","small");
 	      $enter.append($valor);
 	   });
 
 	   $color.on("click", function (){
-	      $valor=$area.val();
-	      $enter.attr("class","color");
-	      $enter.append($valor);
+			 $enter.text("");
+			 var textColor= parseInt(prompt("Ingresa el valor en hexadecimal"));
+			 var $textColor=("#"+textColor);
+			 $valor=$area.val();
+			 console.log($textColor);
+			 $enter.css("color", $textColor);
+			 $enter.append($valor);
+
 	   });
 
      $background.on("click", function (){
+			 $enter.text("");
         var backgroundColor= parseInt(prompt("Ingresa el valor en hexadecimal"));
         backgroundColor=("#"+backgroundColor);
-
 	      $valor=$area.val();
         console.log(backgroundColor);
-	      $enter.css("color", backgroundColor);
+	      $enter.css("backgroundColor", backgroundColor);
+	      $enter.append($valor);
+	   });
+
+		 $left.on("click", function (){
+			 $enter.text("");
+	      $valor=$area.val();
+	      $enter.attr("class","text-left");
+	      $enter.append($valor);
+	   });
+
+		 $center.on("click", function (){
+	      $valor=$area.val();
+	      $enter.attr("class","text-center");
+	      $enter.append($valor);
+	   });
+
+		 $right.on("click", function (){
+	      $valor=$area.val();
+	      $enter.attr("class","text-right");
 	      $enter.append($valor);
 	   });
