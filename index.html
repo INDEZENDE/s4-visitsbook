@@ -1,1 +1,111 @@
-ECHO est� activado.
+
+<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, user-scalable=no,
+	    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <!-- Latest compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+	    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	    <link rel="stylesheet" href="css/main.css">
+	       <title>Libro de visitas</title>
+	     </head>
+	     <body>
+	       <div class="container">
+	        <div class="row">
+	          <div class=" col-md-12 text-center">
+	            <h1>Libro de visitas</h1>
+	          </div>
+	       </div>
+	       <div class="row">
+	         <div class=" col-md-12">
+	           <h3>Comentarios pasados</h3>
+	         </div>
+	       </div>
+	       <!-- Por DOM trae los omentarios pasados -->
+	       <div class="row">
+	         <div class="col-md-12">
+	           <p></p>
+	         </div>
+	       </div>
+	       <!--Inicia el text area  -->
+	       <div class="row">
+	         <h3 class="text-center">Agregar un nuevo comentario</h3>
+	       </div>
+	       <!-- Contiene todo el menú -->
+	       <div class="row">
+	              <div class="col-md-12">
+	                  <ul class="nav navbar-nav ">
+	                    <!-- Large -->
+
+	                    <li >
+	                      <button  id="large">Large </button>
+	                    </li>
+	                    <!-- Medium -->
+	                    <li >
+	                      <button id="medium"  >Medium </button>
+	                    </li>
+	                    <!-- Small -->
+	                    <li >
+	                      <button id="small" >Small </button>
+	                    </li>
+	                    <!-- Color de texto  -->
+	                    <li >
+	                      <button id="color" >Color de texto </button>
+	                    </li>
+	                    <!--Color de fondo  -->
+	                    <li >
+	                      <a  href="#" >Color de fondo   </a>
+	                    </li>
+	                    <!--Izquierda  -->
+	                    <li >
+	                      <a  href="#" >Izquierda   </a>
+	                    </li>
+	                    <!--Centrar  -->
+	                    <li >
+	                      <a  href="#" >Centrar   </a>
+	                    </li>
+	                    <!--Derecha  -->
+	                    <li >
+	                      <a  href="#" >Derecha   </a>
+	                    </li>
+	                   </ul>
+	              </div>
+	       </div>
+	       <!-- Area para que el usuario agregue el texto -->
+	       <div class="row">
+
+	         <textarea class="form-control" rows="3" id="area"></textarea>
+
+	       </div>
+	       <div class="row">
+	         <div class="col-md-12">
+	           <h4>Así se vera tu comentario</h4>
+	         </div>
+	       </div>
+	       <!-- Área que se regresa del dom -->
+	       <div class="row">
+	         <div class="col-md-12">
+	           <p id="enter"></p>
+	         </div>
+	       </div>
+	       <!--Bot´n de envío  -->
+	       <div class="row">
+	         <div class="col-md-12 text-center">
+	            <button type="button" name="button" id="button">Enviar comentarios</button>
+	         </div>
+
+	       </div>
+
+
+	      </div>
+	      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	      <!-- Latest compiled and minified JavaScript -->
+	      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	      <script src="js/jquery.min.js"></script>
+	      <script src="js/app.js"></script>
+	    </body>
+	  </html>
