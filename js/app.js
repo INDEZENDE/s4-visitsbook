@@ -1,4 +1,3 @@
-
 // Traer los elementos del dom
 	var $area=$('#area');//Trae lo que introduce el usuario $area.val()
 	var $button=$('#button');
@@ -54,7 +53,7 @@
 
 	   $color.on("click", function (){
 			 $enter.text("");
-			 var textColor= parseInt(prompt("Ingresa el valor en hexadecimal"));
+			 var textColor= prompt("Ingresa el valor en hexadecimal");
 			 var $textColor=("#"+textColor);
 			 $valor=$area.val();
 			 console.log($textColor);
@@ -65,7 +64,7 @@
 
      $background.on("click", function (){
 			 $enter.text("");
-        var backgroundColor= parseInt(prompt("Ingresa el valor en hexadecimal"));
+        var backgroundColor=prompt("Ingresa el valor en hexadecimal");
         backgroundColor=("#"+backgroundColor);
 	      $valor=$area.val();
         console.log(backgroundColor);
